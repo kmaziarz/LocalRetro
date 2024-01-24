@@ -15,8 +15,8 @@ from torch.optim import Adam, lr_scheduler
 from dgl.data.utils import Subset
 from dgllife.utils import WeaveAtomFeaturizer, CanonicalBondFeaturizer, smiles_to_bigraph, EarlyStopping
 
-from models import LocalRetro_model
-from dataset import USPTODataset, USPTOTestDataset
+from local_retro.scripts.models import LocalRetro_model
+from local_retro.scripts.dataset import USPTODataset, USPTOTestDataset
 
 def init_featurizer(args):
     atom_types = ['C', 'N', 'O', 'S', 'F', 'Si', 'P', 'Cl', 'Br', 'Mg', 'Na', 'Ca', 'Fe',

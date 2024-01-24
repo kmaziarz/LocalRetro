@@ -5,7 +5,7 @@ import time
 import torch
 import torch.nn as nn
 
-from utils import predict
+from local_retro.scripts.utils import predict
 
 import dgl
 

@@ -6,7 +6,7 @@ import dgl
 import dgllife
 from dgllife.model import MPNNGNN
 
-from model_utils import pair_atom_feats, unbatch_mask, unbatch_feats, Global_Reactivity_Attention, GELU
+from local_retro.scripts.model_utils import pair_atom_feats, unbatch_mask, unbatch_feats, Global_Reactivity_Attention, GELU
 
 class LocalRetro_model(nn.Module):
     def __init__(self,

@@ -9,7 +9,7 @@ from rdkit.Chem import rdChemReactions
 RDLogger.DisableLog('rdApp.*')
 
 sys.path.append('../')
-from LocalTemplate.template_extractor import extract_from_reaction
+from local_retro.LocalTemplate.template_extractor import extract_from_reaction
 
 def mkdir_p(path):
     try:

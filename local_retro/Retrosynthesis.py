@@ -11,9 +11,9 @@ import dgl
 from dgllife.utils import smiles_to_bigraph, WeaveAtomFeaturizer, CanonicalBondFeaturizer
 from functools import partial
 
-from scripts.utils import init_featurizer, load_model, collate_molgraphs_test
-from scripts.get_edit import combined_edit
-from LocalTemplate.template_decoder import *
+from local_retro.scripts.utils import init_featurizer, load_model, collate_molgraphs_test
+from local_retro.scripts.get_edit import combined_edit
+from local_retro.LocalTemplate.template_decoder import *
     
 atom_types = ['C', 'N', 'O', 'S', 'F', 'Si', 'P', 'Cl', 'Br', 'Mg', 'Na', 'Ca', 'Fe',
                  'As', 'Al', 'I', 'B', 'V', 'K', 'Tl', 'Yb', 'Sb', 'Sn', 'Ag', 'Pd', 'Co', 'Se', 'Ti',

@@ -4,8 +4,8 @@ import torch
 import sklearn
 import torch.nn as nn
 
-from utils import init_featurizer, mkdir_p, get_configure, load_model, load_dataloader, predict
-from get_edit import write_edits
+from local_retro.scripts.utils import init_featurizer, mkdir_p, get_configure, load_model, load_dataloader, predict
+from local_retro.scripts.get_edit import write_edits
 
 def main(args):
     model_name = 'LocalRetro_%s.pth' % args['dataset']

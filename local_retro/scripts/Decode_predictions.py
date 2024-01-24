@@ -11,8 +11,8 @@ import rdkit
 from rdkit import Chem, RDLogger 
 from rdkit.Chem import rdChemReactions
 
-from utils import mkdir_p
-from LocalTemplate.template_decoder import *
+from local_retro.scripts.utils import mkdir_p
+from local_retro.LocalTemplate.template_decoder import *
 
 def get_k_predictions(test_id, args):
     raw_prediction = args['raw_predictions'][test_id]

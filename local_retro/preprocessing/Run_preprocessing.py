@@ -8,7 +8,7 @@ from rdkit.Chem import rdChemReactions
 RDLogger.DisableLog('rdApp.*')  
 
 sys.path.append('../')
-from Extract_from_train_data import build_template_extractor, get_reaction_template, get_full_template
+from local_retro.preprocessing.Extract_from_train_data import build_template_extractor, get_reaction_template, get_full_template
     
 def get_edit_site_retro(smiles): # the function in Run_preprocessing.py
     mol = Chem.MolFromSmiles(smiles)
